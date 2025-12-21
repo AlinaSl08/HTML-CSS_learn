@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth; /* Включает плавную анимацию для всех якорей */
+  width: 1124px;
+  height: 2020px;
+  margin: auto;
+}
+
+.back-to-top {
+  position: fixed;   /* Кнопка закреплена на экране */
+  bottom: 24px;      /* Отступ снизу */
+  right: 16px;       /* Отступ справа */
+  padding: 27.01px 32.33px 28px 32.4px;
+  background-color: #59BD5A;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1000;     /* Чтобы кнопка была поверх других элементов */
+}
+
+ .header {
+}
+.logo-head {
+    left: 81.38px;
+    bottom: 29.69px;
+    top: 30px;
+}
+.login {
+}
+.basket {
+}
+.search {
+}
+.h1 {
+}
+.content-item {
+}
+.image {
+}
+.name_rest {
+}
+.info {
+}
+.time {
+}
+.logo-footer {
+}
+.about-left {
+}
+.language {
+}
+.contact {
+}
+.images_contact {
+}
+.about-center {
+}
+.about-right {
+}
+.dowload {
+}
+.foot {
+}
+.back-to-top {
+}
