@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Служба доставки ресторанов">
     <link rel="stylesheet" href="/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Uber Eats</title>
 </head>
 <body>
@@ -19,63 +20,80 @@
         <form action="/submit" method="get" class="search">
             <input type="search" name="q" placeholder="Поиск по ресторанам и кухням" required>
         </form>
-    
-        <div class="h1">
-            <h1>Рестораны в Москве</h1>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest1.jpg" alt="Макдоналдс — Газетный"></div>
-            <h4 class="name_rest">Макдоналдс — Газетный</h4>
-            <h5 class="info">₽₽ • Бургеры</h5>
-            <p class="time">25 - 35 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest2.jpg" alt="DimSum & Co — ЦДМ"></div>
-            <h4 class="name_rest">DimSum & Co — ЦДМ</h4>
-            <h5 class="info">₽ • Японская • Китайская • Азиатская</h5>
-            <p class="time">40 - 50 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest3.jpg" alt="ДвижОК — Манежная"></div>
-            <h4 class="name_rest">ДвижОК — Манежная</h4>
-            <h5 class="info">₽ • Американская • Европейская</h5>
-            <p class="time">35 - 45 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest4.jpg" alt="НЯ — NHA"></div>
-            <h4 class="name_rest">НЯ — NHA</h4>
-            <h5 class="info">₽₽ • Вьетнамская</h5>
-            <p class="time">30 - 40 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest5.jpg" alt="Точка Дзы — Цветной"></div>
-            <h4 class="name_rest">Точка Дзы — Цветной</h4>
-            <h5 class="info">₽₽ • Вьетнамская</h5>
-            <p class="time">40 - 50 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest6.jpg" alt="Cinnabon"></div>
-            <h4 class="name_rest">Cinnabon</h4>
-            <h5 class="info">₽ • Выпечка • Десерты • Капкейки</h5>
-            <p class="time">25 - 35 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest7.jpg" alt="PIZZELOVE"></div>
-            <h4 class="name_rest">PIZZELOVE</h4>
-            <h5 class="info">₽₽ • Пицца</h5>
-            <p class="time">15 - 25 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest8.jpg" alt="Zю кафе — Тверская"></div>
-            <h4 class="name_rest">Zю кафе — Тверская</h4>
-            <h5 class="info">₽₽ • Японская</h5>
-            <p class="time">25 - 35 мин</p>
-        </div>
-        <div class="content-item">
-            <div class="image"><img src="/img/rest9.jpg" alt="Bar BQ Cafe — Манежная"></div>
-            <h4 class="name_rest">Bar BQ Cafe — Манежная</h4>
-            <h5 class="info">₽₽₽ • Европейская</h5>
-            <p class="time">30 - 40 мин</p>
+        <h1 class="content-title">Рестораны в Москве</h1>
+        <div class="container">
+            <div class="content-item">
+                <div class="image"><img src="/img/rest1.jpg" alt="Макдоналдс — Газетный"></div>
+                <div class="description">
+                    <h4 class="name_rest">Макдоналдс — Газетный</h4>
+                    <h5 class="info">₽₽ • Бургеры</h5>
+                    <p class="time">25 - 35 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest2.jpg" alt="DimSum & Co — ЦДМ"></div>
+                <div class="description">
+                    <h4 class="name_rest">DimSum & Co — ЦДМ</h4>
+                    <h5 class="info">₽ • Японская • Китайская • Азиатская</h5>
+                    <p class="time">40 - 50 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest3.jpg" alt="ДвижОК — Манежная"></div>
+                <div class="description">
+                    <h4 class="name_rest">ДвижОК — Манежная</h4>
+                    <h5 class="info">₽ • Американская • Европейская</h5>
+                    <p class="time">35 - 45 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest4.jpg" alt="НЯ — NHA"></div>
+                <div class="description">
+                    <h4 class="name_rest">НЯ — NHA</h4>
+                    <h5 class="info">₽₽ • Вьетнамская</h5>
+                    <p class="time">30 - 40 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest5.jpg" alt="Точка Дзы — Цветной"></div>
+                <div class="description">
+                    <h4 class="name_rest">Точка Дзы — Цветной</h4>
+                    <h5 class="info">₽₽ • Вьетнамская</h5>
+                    <p class="time">40 - 50 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest6.jpg" alt="Cinnabon"></div>
+                <div class="description">
+                    <h4 class="name_rest">Cinnabon</h4>
+                    <h5 class="info">₽ • Выпечка • Десерты • Капкейки</h5>
+                    <p class="time">25 - 35 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest7.jpg" alt="PIZZELOVE"></div>
+                <div class="description">
+                    <h4 class="name_rest">PIZZELOVE</h4>
+                    <h5 class="info">₽₽ • Пицца</h5>
+                    <p class="time">15 - 25 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest8.jpg" alt="Zю кафе — Тверская"></div>
+                <div class="description">
+                    <h4 class="name_rest">Zю кафе — Тверская</h4>
+                    <h5 class="info">₽₽ • Японская</h5>
+                    <p class="time">25 - 35 мин</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="image"><img src="/img/rest9.jpg" alt="Bar BQ Cafe — Манежная"></div>
+                <div class="description">
+                    <h4 class="name_rest">Bar BQ Cafe — Манежная</h4>
+                    <h5 class="info">₽₽₽ • Европейская</h5>
+                    <p class="time">30 - 40 мин</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -108,7 +126,7 @@
             <a href="" target="_blank"><p>FAQs</p></a>
         </div>
         <div class="dowload">
-            <a href="" target="_blank"><img src="/img/appstore.jpg" alt="Загруить в AppStore"></a>
+            <a href="" target="_blank"><img src="/img/appstore.jpg" alt="Загрузить в AppStore"></a>
             <a href="" target="_blank"><img src="/img/googleplay.jpg" alt="Загрузить в GooglePlay"></a>
         </div>
         <div class="foot">
@@ -116,7 +134,7 @@
             <p>Обработка персональных данных</p>
             <p>Пользовательское соглашение</p>
         </div>
-        <button class="back-to-top"><a href="#top">↑</a></button>
+        <button class="back-to-top"><a href="#top"><img src="/img/Shape.svg" alt="Подняться вверх"></a></button>
     </footer>
 </body>
 </html>
