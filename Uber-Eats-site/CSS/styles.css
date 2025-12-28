@@ -1,47 +1,174 @@
-html {
-  scroll-behavior: smooth; /* Включает плавную анимацию для всех якорей */
-  width: 1124px;
-  height: 2020px;
-  margin: auto;
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1124px;
+  width: 100%; 
 }
 
 .back-to-top {
   position: fixed;   /* Кнопка закреплена на экране */
-  bottom: 24px;      /* Отступ снизу */
-  right: 16px;       /* Отступ справа */
-  padding: 27.01px 32.33px 28px 32.4px;
+  bottom: 6px;      /* Отступ снизу */
+  left: calc(50% + 930px / 2 );
+  padding: 27.01px 33px 25px 33.5px;
   background-color: #59BD5A;
-  color: #FFFFFF;
-  text-decoration: none;
-  border-radius: 5px;
+  border-radius: 2px;
+  border: 0;
   z-index: 1000;     /* Чтобы кнопка была поверх других элементов */
 }
 
  .header {
+  display: flex;
+  align-items: center;
+  max-width: 1124px;
+  height: 72px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
+
+
 .logo-head {
-    left: 81.38px;
-    bottom: 29.69px;
-    top: 30px;
+    padding-left: 81.38px;
+    padding-top: 5px;
+
 }
+
 .login {
+  margin-left: auto;
 }
+
+button {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+}
+
+
+.login button {
+  margin-right: 26px;
+  padding: 11px 20px;
+  background-color: #FFFFFF;
+  color:#1D1D1D;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 2px;
+  border: 1px solid #E0E0E0;
+  cursor: pointer;
+}
+
 .basket {
+  margin-right: 97.05px;
+  padding-top: 5px;
 }
+
+
+
 .search {
+  margin: 56px 87px 56px 81px;
+  max-width: 956px;
 }
-.h1 {
+
+.search input {
+  width: 100%;
+  height: 24px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #626262;
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+  outline: none; 
+  padding: 0; 
+  background: transparent;
 }
-.content-item {
+
+.search input[type="search"]::placeholder {
+  color: #B0B0B0; /* цвет текста плейсхолдера */
 }
-.image {
+
+.content-title {
+  margin: 60px 0 16px 81px;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  color: #1D1D1D;
+  display: block;
 }
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 равные колонки */
+  gap: 16px;
+  margin: 0 87px 0 81px;
+  padding: 0;
+}
+
+.content-item .image{
+    width: 100%;
+    height: 259px;
+    overflow: hidden;
+}
+
+.content-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Это важно - картинка заполнит контейнер */
+  object-position: 50% 5px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin: 16px 16px 0 0;
+}
+
 .name_rest {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #1D1D1D;
+  margin: 0 0 4px 0;
+  line-height: 24px;
 }
+
 .info {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #626262;
+  font-weight: normal;
+  margin: 1px 0 4px 0;
+  line-height: 21px;
 }
+
 .time {
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  color: #1D1D1D;
+  font-weight: normal;
+  margin: 1px 0 0 0;
+  line-height: 21px;
 }
+
+.content-item:nth-child(n+4) { /* Карточки начиная с 4-й (вторая строка) */
+  margin-top: 14px;
+}
+
+.content-item:nth-child(n+7) { /* Карточки начиная с 4-й (вторая строка) */
+  margin-top: 16px;
+}
+
+footer {
+  background-color: #262626;
+  margin: 98px; 
+}
+
 .logo-footer {
 }
 .about-left {
@@ -62,3 +189,4 @@ html {
 }
 .back-to-top {
 }
+
